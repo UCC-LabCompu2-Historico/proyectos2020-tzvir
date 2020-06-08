@@ -5,6 +5,7 @@
     <title>Catálogo Messier</title>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilo.css">
+    <script type="text/javascript"  src="misfuncionesMessier.js" ></script>
 
 </head>
 
@@ -20,22 +21,24 @@
 
 <form>
     <label for="Por_tipo:"><h3>Por tipo</h3></label>
-    <select id="Por_tipo:">
-        <option value="Nebulosa">Nebulosa</option>
-        <option value="Galaxia">Galaxia</option>
-        <option value="Cúmulo">Cúmulo</option>
+    <select id="Por_tipo:" onclick="mostrarcatalogo_ocultarcatalogo_por_tipo()" >
+        <option value=" "></option>
+        <option value="Nebulosa">  Nebulosa  </option>
+        <option value="Galaxia" >  Galaxia </option>
+        <option value="Cúmulo" > Cúmulo </option>
     </select>
 
     <h3>Por número</h3>
 
-    <div class="numero">
-        <input type="number" name="numero" min="0" max="110">
+    <div class="numero" id="numero">
+        <input type="number" name="numero" value="numero" min="1" max="110" onclick="mostrarcatalogo_ocultarcatalogo_por_numero()">
     </div>
 
 </form>
 
 <section>
-
+    <div name="catalogos" id="nM110" >
+        <p>M110</p>
     <ul><li>Distancia en años luz: 2.900.000</li>
         <li>Magnitud aparente: +8.3 - 10</li>
         <li>Ascensión recta: 00h 40,4 m</li>
@@ -59,6 +62,15 @@
         M110 puede observarse al noroeste del bulbo de la galaxia de Andrómeda,siendo visto como una pequeña mancha
         borrosa (en los grandes prismáticos desde un sitio de cielo oscuro) o su estructura en detalle (en un telescopio de tamaño mediano).
         Se adapta bien a una pequeña cantidad de contaminación lumínica y es considerado un reto suburbano excelente.</p>
+    </div>
+
+    <div name="catalogos" id="gM31">
+        <p> M31 </p>
+    </div>
+
+    <div name="catalogos" id="cM2">
+        <p> M2 </p>
+    </div>
 
 </section>
 

@@ -5,7 +5,7 @@
     <title>Información</title>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilo.css">
-
+    <script type="text/javascript"  src="misfuncionesMessier.js" ></script>
 </head>
 
 <header>
@@ -20,16 +20,19 @@
 
 <form>
     <label for="Elige_una_opción:"><h3>Elige una opcion</h3></label>
-    <select id="Elige_una_opción:">
-        <option value="Nebulosa">Nebulosa</option>
-        <option value="Galaxia">Galaxia</option>
-        <option value="Cúmulo">Cúmulo</option>
+    <select id="Elige_una_opción:"  onclick="mostrarinfo_ocultarinfo()">
+        <option value=" "></option>
+        <option value="Nebulosa">  Nebulosa  </option>
+        <option value="Galaxia" >  Galaxia </option>
+        <option value="Cúmulo" > Cúmulo </option>
     </select>
+
 
 </form>
 
-<section>
+<section >
 
+    <div name="info" id="Info_Nebulosa">
     <p>Una nebulosa es una nube gigante de polvo y gas en el espacio.
         Algunas nebulosas provienen del gas y el polvo expulsado por la explosión de una estrella moribunda, como una supernova.
         Otras son regiones donde comienzan a formarse nuevas estrellas. Por esta razón, algunas nebulosas se llaman "viveros de estrellas". </p>
@@ -48,10 +51,19 @@
         emite ella misma radiaciones, como la famosa nebulosa de Orión (y entonces se habla de nebulosas de emisión).</li>
         <li>En el segundo caso, en cambio, la nebulosa no emite ninguna luz; sin embargo su presencia se deduce por una especie de región negra
             que destaca sobre el fondo del cielo estrellado. Las mismas se denominan oscuras, y un caso típico de ellas está representado por
-            la llamada Bolsa de Carbón en la Cruz del Sur.</li></ul>
+            la llamada Bolsa de Carbón en la Cruz del Sur.</li></ul></p>
     <p>La nebulosa conocida más cercana a la Tierra se llama la Nebulosa Helix. Es el remanente de una estrella moribunda, posiblemente una
         parecida al Sol. Está aproximadamente a 700 años luz de la Tierra. Eso significa que incluso si pudiera viajar a la velocidad de la luz,
         ¡Todavía le tomaría 700 años llegar allí!</p>
+    </div>
+
+    <div name="info" id="Info_Galaxia">
+        <p> Galaxia </p>
+    </div>
+
+    <div name="info" id="Info_Cumulo">
+        <p> Cúmulo </p>
+    </div>
 
 </section>
 
