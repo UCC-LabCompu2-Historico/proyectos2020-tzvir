@@ -95,8 +95,8 @@ select{
 
 }
 
-div.numero{
-    margin-left: 125px; margin-top: 35px;
+#num{
+    margin: 20px 120px;
 }
 
 section{
@@ -113,14 +113,23 @@ p{
 
 li{
     margin-right: 50px;
+    margin-bottom: 15px;
 }
 
-#nebulosa, #M110 , #paginabiografia, #cielo1 , #cielo2 , #cielo3{
+#agujero_negro, #nebulosa, #galaxia, #cúmulo, #imcat, #M1, #M27, #M30, #M45, #M51, #M110, #paginabiografia, #cielo1, #cielo2, #cielo3{
     width: 710px;
     height: 340px;
     border: 5px solid #c5cae9; border-radius: 10px;
     margin: 80px 30px;
     float: right;
+}
+
+#blanco{
+    text-align: left;
+    color: #c09853;
+    font-family:"Baskerville Old Face";
+    margin-left: 30px;
+    font-size: 18px;
 }
 
 .canvas{
@@ -129,3 +138,5 @@ li{
     margin-top: -200px;
     margin-left: 30px;
 }
+
+

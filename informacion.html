@@ -10,7 +10,22 @@
 
 <header>
     <img id="tipografia" src="imagenes_pagina/messier_tipografia_%20titulo.jpg" alt="messier">
-    <img id="nebulosa" src="imagenes_pagina/imagen_nebulosa.jpg" alt="nebulosa">
+
+    <div id="imagen0">
+        <img id="agujero_negro" src="imagenes_pagina/imagen_inicio_info.jpg" alt="agujero_negro">
+    </div>
+
+    <div id="imagen1">
+        <img id="nebulosa" src="imagenes_pagina/imagen_nebulosa.jpg" alt="nebulosa">
+    </div>
+
+    <div id="imagen2">
+        <img id="galaxia" src="imagenes_pagina/imagen_galaxia.jpg" alt="galaxia">
+    </div>
+
+    <div id="imagen3">
+        <img id="cúmulo" src="imagenes_pagina/imagen_cumulo.jpg" alt="cúmulo">
+    </div>
 
     <h2> INFORMACIÓN </h2>
 
@@ -19,50 +34,187 @@
 <body>
 
 <form>
-    <label for="Elige_una_opción:"><h3>Elige una opcion</h3></label>
-    <select id="Elige_una_opción:"  onclick="mostrarinfo_ocultarinfo()">
-        <option value=" "></option>
+    <label for="Elige_una_opción:"> <h3> Elige una opcion </h3> </label>
+    <select id="Elige_una_opción:"  onchange="mostrarinfo_ocultarinfo()">
+        <option value="Nada"></option>
         <option value="Nebulosa">  Nebulosa  </option>
         <option value="Galaxia" >  Galaxia </option>
         <option value="Cúmulo" > Cúmulo </option>
     </select>
 
-
 </form>
 
-<section >
-
-    <div name="info" id="Info_Nebulosa">
-    <p>Una nebulosa es una nube gigante de polvo y gas en el espacio.
-        Algunas nebulosas provienen del gas y el polvo expulsado por la explosión de una estrella moribunda, como una supernova.
-        Otras son regiones donde comienzan a formarse nuevas estrellas. Por esta razón, algunas nebulosas se llaman "viveros de estrellas". </p>
-    <p>Tienen una importancia cosmológica notable porque se consideran los lugares donde nacen, por fenómenos de condensación y agregación de
-        la materia, los sistemas solares similares al nuestro.</p>
-    <p>Están hechas de polvo y gases, principalmente hidrógeno y helio. El polvo y los gases en una nebulosa están muy dispersos, pero
-        la gravedad puede comenzar a juntar grupos de polvo y gas. A medida que estos grupos se hacen más y más grandes, su fuerza gravitacional se
-        hace más y más fuerte.
-        Finalmente, el grupo de polvo y gas se vuelve tan grande que se colapsa por su propia gravedad.
-        El colapso hace que el material en el centro de la nube se caliente, y este núcleo caliente es el comienzo de una estrella.</p>
-    <p>Existen en el espacio entre las estrellas, también conocido como espacio interestelar:
-    <p>Pueden hacerse visibles si se encuentran en las proximidades de estrellas, o bien permanecer completamente envueltas
-        en la oscuridad del espacio:
-    <ul><li>En el primer caso, una nebulosa puede brillar o bien porque refleja la luz de estrellas cercanas, como sucede a la nebulosa de Mérope en
-        las Pléyades (y se habla de nebulosa de reflexión), o bien porque, excitada por las radiaciones de las estrellas vecinas,
-        emite ella misma radiaciones, como la famosa nebulosa de Orión (y entonces se habla de nebulosas de emisión).</li>
-        <li>En el segundo caso, en cambio, la nebulosa no emite ninguna luz; sin embargo su presencia se deduce por una especie de región negra
-            que destaca sobre el fondo del cielo estrellado. Las mismas se denominan oscuras, y un caso típico de ellas está representado por
-            la llamada Bolsa de Carbón en la Cruz del Sur.</li></ul></p>
-    <p>La nebulosa conocida más cercana a la Tierra se llama la Nebulosa Helix. Es el remanente de una estrella moribunda, posiblemente una
-        parecida al Sol. Está aproximadamente a 700 años luz de la Tierra. Eso significa que incluso si pudiera viajar a la velocidad de la luz,
-        ¡Todavía le tomaría 700 años llegar allí!</p>
+<section>
+    <div id="Ingresar">
+        <p> Seleccione la opción </p>
     </div>
 
-    <div name="info" id="Info_Galaxia">
-        <p> Galaxia </p>
+    <div id="Info_Nebulosa">
+        <p>
+            Una nebulosa es una nube gigante de polvo y gas en el espacio.
+            Algunas nebulosas provienen del gas y el polvo expulsado por la explosión de una estrella moribunda, como una supernova.
+            Otras son regiones donde comienzan a formarse nuevas estrellas. Por esta razón, algunas nebulosas se llaman "Viveros de estrellas".
+        </p>
+
+        <p> Tienen una importancia cosmológica notable porque se consideran los lugares donde nacen, por fenómenos de condensación y agregación de
+            la materia, los sistemas solares similares al nuestro.
+        </p>
+
+        <p> Están hechas de polvo y gases, principalmente hidrógeno y helio. El polvo y los gases en una nebulosa están muy dispersos, pero
+            la gravedad puede comenzar a juntar grupos de polvo y gas. A medida que estos grupos se hacen más y más grandes, su fuerza gravitacional se
+            hace más y más fuerte.
+            Finalmente, el grupo de polvo y gas se vuelve tan grande que se colapsa por su propia gravedad.
+            El colapso hace que el material en el centro de la nube se caliente, y este núcleo caliente es el comienzo de una estrella.
+        </p>
+
+        <p>
+            Existen en el espacio entre las estrellas, también conocido como espacio interestelar.
+        </p>
+
+        <p>
+            Pueden hacerse visibles si se encuentran en las proximidades de estrellas, o bien permanecer completamente envueltas
+            en la oscuridad del espacio:
+        </p>
+
+        <ul>
+            <li>
+                En el primer caso, una nebulosa puede brillar o bien porque refleja la luz de estrellas cercanas, como sucede con Mérope en
+                las Pléyades (y se habla de nebulosa de reflexión), o bien porque, excitada por las radiaciones de las estrellas vecinas,
+                emite ella misma radiaciones, como Orión (y entonces se habla de nebulosas de emisión).
+            </li>
+
+            <li>
+                En el segundo caso, en cambio, no emite ninguna luz; sin embargo su presencia se deduce por una especie de región negra
+                que destaca sobre el fondo del cielo estrellado. Las mismas se denominan oscuras, y un caso típico de ellas está representado por
+                la llamada Bolsa de Carbón en la Cruz del Sur.
+            </li>
+        </ul>
+
+        <p>
+            La nebulosa conocida más cercana a la Tierra se llama Helix. Es el remanente de una estrella moribunda, posiblemente una
+            parecida al Sol. Está aproximadamente a 700 años luz de la Tierra. Eso significa que incluso si pudiera viajar a la velocidad de la luz,
+            todavía le tomaría 700 años llegar allí.
+        </p>
+
+        <p><u><b> Imagen: M20 (Nebulosa Trífida en Sagitario) </b></u></p>
     </div>
 
-    <div name="info" id="Info_Cumulo">
-        <p> Cúmulo </p>
+    <div id="Info_Galaxia">
+        <p>
+            Una galaxia es un conjunto de gases, polvo y miles de millones de estrellas y sus sistemas solares. Se mantiene unida gracias a la fuerza
+            de gravedad; y su luz proviene de las estrellas en su interior.
+        </p>
+
+        <p>
+            La más conocida es la vía Láctea, sin embargo existen muchas más. El Telescopio Espacial Hubble, por ejemplo, observó una pequeña porción
+            del espacio durante 12 días, y descubrió 10 000 galaxias de todo los tamaños, formas y colores. Algunos científicos creen que
+            podría haber unos cien mil millones de galaxias en el universo.
+        </p>
+
+        <p>
+            Según su forma, las galaxias se clasifican en elípticas, espirales, irregulares y enanas.
+        </p>
+
+        <ul>
+            <li>
+                Las elípticas no tienen brazos y son más o menos regulares; están formadas por estrellas viejas y son las galaxias más grandes.
+            </li>
+
+            <li>
+                Las espirales, por su parte, tienen una zona central (núcleo) más o menos esférica y brazos de tamaño y número variable.
+                Las espirales barradas son similares a las anteriores, pero tienen un núcleo con forma de barra en lugar de esférico.
+            </li>
+
+            <li>
+                Las irregulares no tienen forma definida, y son las que más abundan. Se ven como manchas.
+            </li>
+
+            <li>
+                Por último, se encuentran las galaxias enanas. Esferoidales, pequeñas y con poca luz.
+            </li>
+        </ul>
+
+        <p>
+            Las galaxias se agrupan para formar estructuras aún mayores, siendo denominadas como cúmulos galácticos. En los mismos, se observa
+            que las de formas elípticas se suelen disponer hacia el centro, mientras que las espirales e irregulares están más
+            cerca de los bordes.
+        </p>
+
+        <p>
+            Algunas series de objetos celestes emiten una gran cantidad de energía, y se conocen con el nombre de galaxias activas, de las cuales
+            se encuentran:
+        </p>
+
+        <ul>
+            <li>
+                Cuásares: emiten una gran cantidad de energía en forma de luz, radiación ultravioleta, ondas de radio, etc. Son los
+                objetos más lejanos del Universo conocidos, estando a una distancia de varios miles de millones de años luz de la tierra.
+            </li>
+
+            <li>
+                Radiogalaxias: emiten una gran cantidad de radiación en forma de ondas de radio. Están mucho más cerca de la Tierra que
+                los cuásares.
+            </li>
+        </ul>
+
+        <p>
+            A veces, las galaxias se acercan demasiado y chocan entre sí, siendo conocido este fenómeno como colisiones. En este caso,
+            la galaxia absorbe a la más pequeña gracias a su fuerza gravitatoria. Se dice que la Vía Láctea chocará con Andrómeda. Sin embargo,
+            el suceso ocurrirá dentro de cinco mil millones de años. Además, las galaxias son tan grandes y están tan expandidas en los extremos
+            que, aunque se choquen entre sí, los planetas y los sistemas solares a menudo no llegan a colisionar.
+        </p>
+
+        <p><u><b> Imagen: M74 (Galaxia espiral en Piscis) </b></u></p>
+    </div>
+
+    <div id="Info_Cumulo">
+        <p>
+            Son grupos de estrellas que están asociadas por la atracción gravitatoria entre ellas, y que comparten un mismo origen.
+        </p>
+
+        <p>
+            Se encuentran diseminados por la Vía Láctea y otras galaxias.
+        </p>
+
+        <p>
+            Se pueden distinguir dos tipos de cúmulos estelares: los abiertos y los globulares.
+        </p>
+
+        <ol>
+            <li>
+                Los abiertos están formados por pocas estrellas (desde decenas hasta miles), pero todos tienen en común que, en ellos,
+                la densidad de estrellas es mucho mayor que en otras regiones, como, por ejemplo, aquella en la que se encuentra el Sol.
+                <p>
+                    Contienen estrellas jóvenes, que se hallan relativamente dispersas en una región que tiene, como media, 10 años luz de diámetro.
+                    Como ejemplo está Pléyades.
+                </p>
+            </li>
+
+            <li>
+                Los globulares contienen una gran cantidad de estrellas (Desde 10.000 hasta un millón), muy concentradas especialmente en la región
+                central. Son más grandes que los cúmulos abiertos, aunque menos numerosos.
+            </li>
+
+            Están formados por estrellas mucho más maduras: se piensa que la edad de los que pueblan nuestra galaxia es del orden de 12.000 a
+            14.000 millones de años. En la Vía Láctea hay unos 200 de este tipo (de ellos, solo 29 aparecen en el catálogo Messier).
+        </ol>
+
+        <p>
+            También existen cúmulos de galaxias, y cúmulos de cúmulos de galaxias (supercúmulos).
+        </p>
+
+        <p>
+            Los cúmulos de galaxias son superestructuras cósmicas. Pueden alcanzar tamaños del orden de millones años luz de diámetro, y el numero
+            de galaxias que los forman es muy variable. La Vía Láctea se encuentra en el llamado Grupo Local, que consta de la primera, Andrómeda y
+            M33, más 30 galaxias más pequeñas.
+        </p>
+
+        <p>
+            Los supercúmulos se conforman por agrupaciones de decenas o centenas de galaxias. El Grupo Local forma parte del supercúmulo de Virgo,
+            con una centena de cúmulos galácticos y con forma de plato, con un diámetro de 200millones de años luz.
+        </p>
+
+        <p><u><b> Imagen: M56 (Cúmulo globular en Lira) </b></u></p>
     </div>
 
 </section>
@@ -74,4 +226,5 @@
 </footer>
 
 </body>
+
 </html>
