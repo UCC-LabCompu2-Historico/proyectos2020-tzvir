@@ -124,6 +124,15 @@ li{
     float: right;
 }
 
+div.links_inicio{
+    color: #c5cae9;
+    font-family: 'Cinzel', serif;
+    font-size: 18px;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: -90px;
+}
+
 #blanco{
     text-align: left;
     color: #c09853;
