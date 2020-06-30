@@ -22,4 +22,7 @@ La creación de este proyecto no hubiera sido posible sin el uso de estas plataf
 
 ## Autor
 Created and developed by Vera Tzvir
+<<<<<<< HEAD
 
+=======
+>>>>>>> 83f32e6adffbc2226dfee35053437d39ad059fea
