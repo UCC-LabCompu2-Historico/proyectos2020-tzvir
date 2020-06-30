@@ -65,7 +65,7 @@ function mostrarinfo_ocultarinfo() {
 
 function mostrarcatalogo_ocultarcatalogo() {
 
-    var valorNum=document.getElementById("num").value;
+    var valorNum=document.getElementById("Catálogo:").value;
 
     if (valorNum == " "){
         document.getElementById("icat").style.display = "block";
