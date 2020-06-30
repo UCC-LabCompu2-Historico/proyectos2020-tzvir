@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <title>Catálogo Messier</title>
+    <title> Catálogo Messier </title>
+    <link rel="icon" href="imagenes_pagina/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilo.css">
-    <script type="text/javascript"  src="misfuncionesMessier.js" ></script>
+    <script type="text/javascript" src="misfuncionesMessier.js" ></script>
 
 </head>
 
@@ -52,19 +54,17 @@
 
 </header>
 
-<h3>Ingrese número</h3>
-
 <form>
-    <input list="numeros" name="num" id="num" onchange="mostrarcatalogo_ocultarcatalogo()">
-
-    <datalist id="numeros">
-        <option value="1">
-        <option value="27">
-        <option value="30">
-        <option value="45">
-        <option value="51">
-        <option value="110">
-    </datalist>
+    <label for="Catálogo:"> <h3> Catálogo: </h3> </label>
+    <select id="Catálogo:"  onchange="mostrarcatalogo_ocultarcatalogo()">
+        <option value=" "> </option>
+        <option value="1"> 1 </option>
+        <option value="27"> 27 </option>
+        <option value="30"> 30 </option>
+        <option value="45"> 45 </option>
+        <option value="51"> 51 </option>
+        <option value="110"> 110 </option>
+    </select>
 
 </form>
 
@@ -79,7 +79,7 @@
         <ul><li>Ascensión Recta: 05:34.5 (horas:minutos)</li>
             <li>Declinación: +22:01 (grados:minutos)</li>
             <li>Distancia: 6 300 (años luz)</li>
-            <li>	Magnitud Aparente: 8,4 (magnitud)</li>
+            <li>Magnitud Aparente: 8,4 (magnitud)</li>
             <li>Tamaño Aparente 6×4 (arc.min)</li></ul>
 
         <p>En 1054, los astrónomos chinos notaron una "estrella" que fue visible durante casi un mes en el cielo diurno. La "estrella"
@@ -109,7 +109,7 @@
             <li>Declinación: +22:43 (grados:minutos)</li>
             <li>Distancia: 1.250 (años luz)</li>
             <li>Magnitud Aparente: 7,4 (magnitud)</li>
-            <li>	Dimensión Aparente: 8.0×5.7 (min/arco)</li></ul>
+            <li>Dimensión Aparente: 8.0×5.7 (min/arco)</li></ul>
 
         <p>M27 es una nebulosa planetaria en la constelación de Vulpecula, a una distancia de 1250 años luz.</p>
 
@@ -214,10 +214,10 @@
 
     <div id="gM110" >
 
-        <ul><li>Distancia en años luz: 2.900.000</li>
-            <li>Magnitud aparente: +8.3 - 10</li>
-            <li>Ascensión recta: 00h 40,4 m</li>
+        <ul><li>Ascensión recta: 00h 40,4 m</li>
             <li>Declinación: +41° 41′</li>
+            <li>Distancia en años luz: 2.900.000</li>
+            <li>Magnitud aparente: +8.3 - 10</li>
             <li>Tamaño aparente: 17 × 10 minutos de arco</li></ul>
 
         <p>La galaxia elíptica M110 (conocido también como Objeto Messier 110, Messier 110, M110 o NGC 205) es una galaxia elíptica enana orbitando
